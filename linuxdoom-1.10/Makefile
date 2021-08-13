@@ -7,8 +7,8 @@
 CC=  gcc  # gcc or g++
 
 CFLAGS=-g -Wall -DNORMALUNIX -DLINUX # -DUSEASM
-LDFLAGS=-L/usr/X11R6/lib
-LIBS=-lXext -lX11 -lnsl -lm
+LDFLAGS=
+LIBS=-lm -lSDL2
 
 # subdirectory for objects
 O=linux
@@ -20,7 +20,7 @@ OBJS=				\
 		$(O)/dstrings.o		\
 		$(O)/i_system.o		\
 		$(O)/i_sound.o		\
-		$(O)/i_video.o		\
+		$(O)/sdl_video.o	\
 		$(O)/i_net.o			\
 		$(O)/tables.o			\
 		$(O)/f_finale.o		\
