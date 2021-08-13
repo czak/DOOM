@@ -23,6 +23,8 @@
 //
 //-----------------------------------------------------------------------------
 
+#include <stdint.h>
+
 #include "doomdef.h"
 
 #include "i_system.h"
@@ -456,7 +458,7 @@ void R_InitTranslationTables (void)
     int		i;
 	
     translationtables = Z_Malloc (256*3+255, PU_STATIC, 0);
-    translationtables = (byte *)(( (int)translationtables + 255 )& ~255);
+    translationtables = (byte *)(( (intptr_t)translationtables + 255 )& ~255);
     
     // translate just the 16 green colors
     for (i=0 ; i<256 ; i++)
