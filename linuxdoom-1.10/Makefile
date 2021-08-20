@@ -19,7 +19,7 @@ OBJS=				\
 		$(O)/doomstat.o		\
 		$(O)/dstrings.o		\
 		$(O)/i_system.o		\
-		$(O)/i_sound.o		\
+		$(O)/sdl_sound.o	\
 		$(O)/sdl_video.o	\
 		$(O)/i_net.o			\
 		$(O)/tables.o			\
